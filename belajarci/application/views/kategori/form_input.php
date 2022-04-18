@@ -3,7 +3,6 @@
 
 
 <h3>Tambah Data Kategori</h3>
-
 <table class="table table-bordered mt-2">
     <tr>
         <td class="col-3">Nama Kategori</td>
@@ -17,4 +16,3 @@
 		
     </tr>
 </table>
-

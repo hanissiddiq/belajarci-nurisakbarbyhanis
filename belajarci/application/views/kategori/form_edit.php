@@ -4,7 +4,6 @@
 
 <h3>Edit Data Kategori</h3>
 <input type="hidden" value="<?php echo $record['id_kategori'] ?>" name="id">
-
 <table class="table table-bordered mt-2">
     <tr>
         <td class="col-3">Nama Kategori</td>
@@ -17,4 +16,3 @@
 		</td>
     </tr>
 </table>
-
