@@ -1,3 +1,4 @@
+
 <!-- Include CDN Bootstrap 3.3 Start -->
 
 <!doctype html>
@@ -75,6 +76,7 @@
 <!-- 
 	<?php
 //echo form_open('auth/login');
+
 ?>
 
 <input type="text" name="username" placeholder="username">
@@ -82,3 +84,4 @@
 <button type="submit" name="submit">Login</button>
 
 </form> -->
+

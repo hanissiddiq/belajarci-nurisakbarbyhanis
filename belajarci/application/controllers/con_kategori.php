@@ -9,6 +9,7 @@ class con_kategori extends CI_Controller {
 
 function index(){
     $data['record']=$this->model_kategori->tampilkan_data();
+
     // $this->load->view('kategori/lihat_data',$data);
 	$this->template->load('template','kategori/lihat_data',$data);
 }
@@ -20,8 +21,10 @@ function post(){
         redirect('con_kategori');
     }
     else{
+
         // $this->load->view('kategori/form_input');
 		$this->template->load('template','kategori/form_input');
+
     }
 }
 
@@ -40,8 +43,10 @@ function post(){
             $id = $this->uri->segment(3);
           
             $data['record'] = $this->model_kategori->get_one($id)->row_array();
+
             //$this->load->view('kategori/form_edit', $data);
 			$this->template->load('template','kategori/form_edit', $data);
+
         }
     }
 
@@ -54,4 +59,6 @@ function post(){
         redirect('con_kategori');
     }
 
+
 }
+
