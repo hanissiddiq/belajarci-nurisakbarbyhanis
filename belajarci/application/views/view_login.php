@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../vendor/Login.css">
 
     <title>Login Page</title>
   </head>
@@ -16,18 +17,27 @@
 
 	  <div class="container">
 
-		  <h1>Selamat Datang</h1>
+		  <h1 class="text-center">Selamat Datang</h1>
+		  
+	<?php
+	echo form_open('auth/login');
+	?>
+		  
+	<div clas="form-group">
+		<label for=""> Username</label>
+		<input class="form-control" type="text" name="username" placeholder="username">
+	</div>
+	<div clas="form-group">
+		<label for=""> Password</label>
+		<input class="form-control" type="password" name="password" placeholder="password">
+	</div>
+	<br>
+		<button type="submit" name="submit" class="btn btn-primary">Login</button>
+		<button type="reset" name="reset" class="btn btn-danger">Reset</button>
+	
+	</form>
 		  
 		  
-		  <?php
-echo form_open('auth/login');
-?>
-
-<input type="text" name="username" placeholder="username">
-<input type="password" name="password" placeholder="password">
-<button type="submit" name="submit">Login</button>
-
-</form>
 
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
