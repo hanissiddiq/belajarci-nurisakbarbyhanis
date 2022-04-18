@@ -9,7 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../vendor/Login.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>vendor/Login.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>vendor/fontawesome-free-6.1.1-web/css/all.min.css">
 
     <title>Login Page</title>
   </head>
@@ -17,19 +18,30 @@
 
 	  <div class="container">
 
-		  <h1 class="text-center">Selamat Datang</h1>
+		  <h3 class="text-center">Selamat Datang</h3>
+	<hr>
 		  
 	<?php
 	echo form_open('auth/login');
 	?>
 		  
-	<div clas="form-group">
+	<div class="form-group">
 		<label for=""> Username</label>
-		<input class="form-control" type="text" name="username" placeholder="username">
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<div class="input-group-text"><i class="fas fa-user"></i></div>
+			</div>
+			<input class="form-control" type="text" name="username" placeholder="Masukkan Username Anda">
+		</div>
 	</div>
-	<div clas="form-group">
+
+	<div class="form-group">
 		<label for=""> Password</label>
-		<input class="form-control" type="password" name="password" placeholder="password">
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<div class="input-group-text"><i class="fas fa-unlock-alt"></i></div>
+			</div>
+		<input class="form-control" type="password" name="password" placeholder="Masukkan Password Anda">
 	</div>
 	<br>
 		<button type="submit" name="submit" class="btn btn-primary">Login</button>
