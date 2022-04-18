@@ -9,7 +9,8 @@ class con_kategori extends CI_Controller {
 
 function index(){
     $data['record']=$this->model_kategori->tampilkan_data();
-    $this->load->view('kategori/lihat_data',$data);
+    // $this->load->view('kategori/lihat_data',$data);
+	$this->template->load('template','kategori/lihat_data',$data);
 }
 
 function post(){
