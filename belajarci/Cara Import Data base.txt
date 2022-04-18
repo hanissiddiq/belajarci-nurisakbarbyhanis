@@ -1,0 +1,6 @@
+buka localhost dengan chrome, pilih phpmyadmin dan buat database dengan nama post
+kemudian, import database.
+
+password login
+username = amri
+pass = 123
