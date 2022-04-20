@@ -10,33 +10,35 @@
 
 
 <h3>FormTransaksi</h3>
-<table border="1">
-<tr><th colspan="3">Form</th></tr>
+<table class="table table-bordered mt-2">
+<tr>
+	<th colspan="3">Form</th>
+</tr>
     <tr>
         <td>Barang</td>
-        <td><input list="barang" name="barang" placeholder="masukkan nama barang"></td>
+        <td><input class="form-control" list="barang" name="barang" placeholder="masukkan nama barang"></td>
         <!-- <td><input list="car" name="car" placeholder="masukkan nama barang"></td> -->
     </tr>
     <tr>
         <td>Qty</td>
-        <td><input type="text" name="qty" placeholder="jumlah"></td>
+        <td><input class="form-control" type="text" name="qty" placeholder="jumlah"></td>
     </tr>
     
     <tr>
         <td colspan="2">
-        <button type="submit" name="submit">Simpan</button>
-        <!-- <?php echo anchor('con_transaksi/selesai', '<button type="submit" name="submit">Selesai</button>')?> -->
-        <?php echo anchor('con_transaksi/selesai_belanja', 'Selesai')?>
+        <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
+        <!-- <?php// echo anchor('con_transaksi/selesai', '<button type="submit" class="btn btn-primary" name="submit">Selesai</button>')?> -->
+        <?php echo anchor('con_transaksi/selesai_belanja', 'Selesai',array('class'=>'btn btn-info'))?>
         </td>
     </tr>
 </table>
 </form>
 <br>
 
-<table border="1">
+<table class="table table-bordered mt-2">
 <tr><th colspan="6">Detail Transaksi</th></tr>
     <tr>
-        <th>No</th>
+        <th width=10>No</th>
         <th>Nama Barang</th>
         <th>Qty</th>
         <th>Harga</th>
@@ -54,7 +56,7 @@
         <td>$d->qty</td>
         <td>$d->harga</td>
         <td>".$d->qty*$d->harga."</td>
-        <td>".anchor('con_transaksi/hapusitem/'.$d->t_detail_id,'Hapus')."</td>
+        <td>".anchor('con_transaksi/hapusitem/'.$d->t_detail_id,'Hapus',array('class'=>'btn btn-outline-danger waves-effect waves-light'))."</td>
         </tr>";
 
         $total=$total+($d->qty*$d->harga);
@@ -62,7 +64,7 @@
         $no++;
     }?>
     <tr>
-        <td colspan="4">Total</td>
+        <td colspan="4" style="text-align: right;">Total</td>
         <td colspan="2"><?php echo "Rp.".$total;?></td>
     </tr>
 </table>
@@ -70,7 +72,7 @@
 <datalist id="barang">
 <?php foreach($barang as $b)
 {
-    echo "<option value='$b->nama_barang'>";
+    echo "<option class='form-control' value='$b->nama_barang'>";
 }
 ?>
     

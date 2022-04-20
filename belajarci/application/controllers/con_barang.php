@@ -11,7 +11,8 @@ class con_barang extends CI_Controller {
     function index()
     {
         $data['record']=$this->model_barang->tampilkan_data()->result();
-        $this->load->view('barang/lihat_data',$data);
+        //$this->load->view('barang/lihat_data',$data);
+		$this->template->load('template','barang/lihat_data',$data);
 
     }
 
@@ -35,7 +36,8 @@ class con_barang extends CI_Controller {
         else{
             $this->load->model('model_kategori');
             $data['kategori']=$this->model_kategori->tampilkan_data()->result();
-            $this->load->view('barang/form_input',$data);
+            //$this->load->view('barang/form_input',$data);
+			$this->template->load('template','barang/form_input',$data);
         }
     }
 
@@ -63,7 +65,8 @@ class con_barang extends CI_Controller {
             $this->load->model('model_kategori');
             $data['kategori']=$this->model_kategori->tampilkan_data()->result();
             $data['record'] = $this->model_barang->get_one($id)->row_array();
-            $this->load->view('barang/form_edit',$data);
+            // $this->load->view('barang/form_edit',$data);
+			$this->template->load('template','barang/form_edit',$data);
         }
     }
 

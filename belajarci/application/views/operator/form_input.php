@@ -3,20 +3,22 @@
 
 
 <h3>Tambah Data Operator</h3>
-<table border="1">
+<table class="table table-bordered mt-2">
     <tr>
-        <td>Nama Lengkap</td>
-        <td><input type="text" name="nama" placeholder="nama lengkap"></td>
+        <td class="col-3">Nama Lengkap</td>
+        <td><input class="form-control" type="text" name="nama" placeholder="nama lengkap"></td>
     </tr>
     <tr>
-        <td>Username</td>
-        <td><input type="text" name="username" placeholder="username"></td>
+        <td class="col-3">Username</td>
+        <td><input class="form-control" type="text" name="username" placeholder="username"></td>
     </tr>
     <tr>
-        <td>Password</td>
-        <td><input type="text" name="password" placeholder="password"></td>
+        <td class="col-3">Password</td>
+        <td><input class="form-control" type="text" name="password" placeholder="password"></td>
     </tr>
     <tr>
-        <td colspan="2"><button type="submit" name="submit">Simpan</button></td>
+        <td colspan="2"><button class="btn btn-primary" type="submit" name="submit">Simpan</button>
+		<a href="javascript:window.history.go(-1);" class="btn btn-warning">Kembali</a>
+	</td>
     </tr>
 </table>

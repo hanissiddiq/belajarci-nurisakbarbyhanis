@@ -11,7 +11,9 @@ class con_operator extends CI_Controller {
     function index()
     {
         $data['record']=$this->model_operator->tampil_data()->result();
-        $this->load->view('operator/lihat_data',$data);
+        // $this->load->view('operator/lihat_data',$data);
+		$this->template->load('template','operator/lihat_data',$data);
+
 
     }
 
@@ -34,7 +36,8 @@ class con_operator extends CI_Controller {
             redirect('con_operator');
         }
         else{
-            $this->load->view('operator/form_input');
+            // $this->load->view('operator/form_input');
+			$this->template->load('template','operator/form_input');
         }
     }
 
@@ -73,7 +76,8 @@ class con_operator extends CI_Controller {
             $id = $this->uri->segment(3);
           
             $data['record'] = $this->model_operator->get_one($id)->row_array();
-            $this->load->view('operator/form_edit', $data);
+            // $this->load->view('operator/form_edit', $data);
+			$this->template->load('template','operator/form_edit', $data);
         }
     }
 

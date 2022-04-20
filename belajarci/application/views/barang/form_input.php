@@ -3,12 +3,12 @@
 
 
 <h3>Tambah Data Barang</h3>
-<table border="1">
+<table class="table table-bordered mt-2">
     <tr>
-        <td>Nama Barang</td>
-        <td><input type="text" name="nama_barang" placeholder="Nama Barang"></td>
+        <td class="col-3">Nama Barang</td>
+        <td><input class="form-control" type="text" name="nama_barang" placeholder="Nama Barang"></td>
     <tr>    <td>Kategori</td>
-        <td><select name="kategori"> <?php foreach ($kategori as $k){
+        <td><select name="kategori" class="form-control"> <?php foreach ($kategori as $k){
         echo "<option value='$k->id_kategori'>$k->nama_kategori </option>";
         }
         ?>
@@ -16,10 +16,14 @@
     </tr>
     <tr>
         <td>Harga</td>
-        <td><input type="text" name="harga" placeholder="Harga"></td>
+        <td><input class="form-control" type="text" name="harga" placeholder="Harga"></td>
     </tr>
     </tr>
     <tr>
-        <td colspan="2"><button type="submit" name="submit">Simpan</button></td>
+        <td colspan="2">
+			<button class="btn btn-primary" type="submit" name="submit">Simpan</button>
+			<a href="javascript:window.history.go(-1);" class="btn btn-warning">Kembali</a>
+		</td>
+	
     </tr>
 </table>

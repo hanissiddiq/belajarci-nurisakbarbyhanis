@@ -4,12 +4,12 @@
 
 <h3>Edit Data Barang</h3>
 <input type="hidden" value="<?php echo $record['id_barang'] ?>" name="id">
-<table border="1">
+<table class="table table-bordered mt-2">
     <tr>
-        <td>Nama Barang</td>
-        <td><input type="text" name="nama_barang" placeholder="Nama Barang" value="<?php echo $record['nama_barang']?>"></td>
+        <td class="col-3">Nama Barang</td>
+        <td><input class="form-control" type="text" name="nama_barang" placeholder="Nama Barang" value="<?php echo $record['nama_barang']?>"></td>
     <tr>    <td>Kategori</td>
-        <td><select name="kategori" > <?php 
+        <td><select class="form-control" name="kategori" > <?php 
         foreach ($kategori as $k)
         {
         echo "<option value='$k->id_kategori'";
@@ -21,10 +21,13 @@
     </tr>
     <tr>
         <td>Harga</td>
-        <td><input type="text" name="harga" placeholder="Harga" value="<?php echo $record['harga']?>"></td>
+        <td><input class="form-control" type="text" name="harga" placeholder="Harga" value="<?php echo $record['harga']?>"></td>
     </tr>
     </tr>
     <tr>
-        <td colspan="2"><button type="submit" name="submit">Simpan</button></td>
+        <td colspan="2">
+			<button class="btn btn-primary" type="submit" name="submit">Simpan</button>
+			<a href="javascript:window.history.go(-1);" class="btn btn-warning">Kembali</a>
+	</td>
     </tr>
 </table>
