@@ -12,7 +12,7 @@ class con_operator extends CI_Controller {
     {
         $data['record']=$this->model_operator->tampil_data()->result();
         // $this->load->view('operator/lihat_data',$data);
-		$this->template->load('template','operator/lihat_data',$data);
+		$this->template->load('template2','operator/lihat_data',$data);
 
 
     }
@@ -37,7 +37,7 @@ class con_operator extends CI_Controller {
         }
         else{
             // $this->load->view('operator/form_input');
-			$this->template->load('template','operator/form_input');
+			$this->template->load('template2','operator/form_input');
         }
     }
 
@@ -77,7 +77,7 @@ class con_operator extends CI_Controller {
           
             $data['record'] = $this->model_operator->get_one($id)->row_array();
             // $this->load->view('operator/form_edit', $data);
-			$this->template->load('template','operator/form_edit', $data);
+			$this->template->load('template2','operator/form_edit', $data);
         }
     }
 

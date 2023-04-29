@@ -10,6 +10,13 @@
         <link rel="shortcut icon" href="assets\images\favicon.ico">
         <link href="<?php echo base_url();?>vendor2\assets\css\bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url();?>vendor2\assets\css\metismenu.min.css" rel="stylesheet" type="text/css">
+
+        <!-- DataTables -->
+        <link href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <!-- Responsive datatable examples -->
+        <link href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
         <link href="<?php echo base_url();?>vendor2\assets\css\icons.css" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url();?>vendor2\assets\css\style.css" rel="stylesheet" type="text/css">
 </head>
@@ -317,14 +324,42 @@
                             </div>
                             <!-- END wrapper -->
                             
-                            <!-- jQuery  -->
-                            <script src="<?php echo base_url();?>vendor2\assets\js\jquery.min.js"></script>
-                            <script src="<?php echo base_url();?>vendor2\assets\js\bootstrap.bundle.min.js"></script>
-                            <script src="<?php echo base_url();?>vendor2\assets\js\metisMenu.min.js"></script>
-                            <script src="<?php echo base_url();?>vendor2\assets\js\jquery.slimscroll.js"></script>
-                            <script src="<?php echo base_url();?>vendor2\assets\js\waves.min.js">
-                            </script>
-                            
-                            <!-- App js -->
-                            <script src="<?php echo base_url();?>vendor2\assets\js\app.js"></script>
-</body></html>
+    <!-- jQuery  -->
+<script src="<?php echo base_url();?>vendor2\assets\js\jquery.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\assets\js\bootstrap.bundle.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\assets\js\metisMenu.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\assets\js\jquery.slimscroll.js"></script>
+<script src="<?php echo base_url();?>vendor2\assets\js\waves.min.js"></script>
+
+<!-- ================ tambahan plugin data table ============= -->
+<!-- Required datatable js -->
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\dataTables.buttons.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\buttons.bootstrap4.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\jszip.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\pdfmake.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\vfs_fonts.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\buttons.html5.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\buttons.print.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\buttons.colVis.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\dataTables.responsive.min.js"></script><script src="..\plugins\datatables\responsive.bootstrap4.min.js"></script>
+<!-- Datatable init js -->
+<script src="<?php echo base_url();?>vendor2\assets\pages\datatables.init.js">
+</script>
+<!-- App js -->
+<script src="<?php echo base_url();?>vendor2\assets\js\app.js"></script>
+</script>
+
+<!-- Myscript dataTable -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.data').DataTable();
+	});
+</script>
+
+</body>
+</html>

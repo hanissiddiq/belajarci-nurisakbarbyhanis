@@ -70,7 +70,7 @@
 <div class="card">
 	<div class="row">
 		
-		<div class="col-2 my-2 p-2 mx-2 photo">
+		<div class="col-2 my-5 p-2 mx-2 photo">
 			<img class="card-img-top img-fluid pas-photo" src="<?= base_url();?>vendor2\assets\images\users\foto-hanis.jpg" alt="Card image cap">
 		</div>
 			
@@ -87,7 +87,7 @@
 				
 			</table>
 			<br>
-			<div class="row ">
+			<div class="row d-flex justify-content-between">
 				<a href="https://www.youtube.com/c/hanissiddiq" class="btn btn-danger waves-effect waves-light m-2"><i class="fab fa-youtube mr-1"></i>	
 				Youtube</a>
 				<a href="https://www.facebook.com/hanis.siddiq" class="btn waves-effect waves-light m-2" style="background-color:#3b5998; color:white; border:none;"><i class="fab fa-facebook-f mr-1"></i>Facebook</a>
