@@ -5,6 +5,7 @@ class con_kategori extends CI_Controller {
 {
     parent::__construct();
     $this->load->model('model_kategori');
+    check_session();
 }
 
 function index(){

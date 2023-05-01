@@ -5,6 +5,7 @@ class con_barang extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('model_barang');
+        check_session();
     }
     
 

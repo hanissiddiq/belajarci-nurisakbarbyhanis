@@ -40,6 +40,7 @@ function __construct()
         }
         else
         {
+            check_session_login();
             $this->load->view('view_login');
         }
     }

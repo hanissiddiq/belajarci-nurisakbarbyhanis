@@ -5,6 +5,7 @@ class con_transaksi extends CI_Controller {
     {
         parent::__construct();
         $this->load->model(array('model_barang','model_transaksi'));
+        check_session();
     }
     
 
