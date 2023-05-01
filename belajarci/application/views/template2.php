@@ -17,6 +17,17 @@
         <!-- Responsive datatable examples -->
         <link href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\datatables\responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
 
+        <!-- Plugin select2 with box -->
+        <link
+			href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\select2\css\select2.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+        <link
+			href="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\bootstrap-touchspin\css\jquery.bootstrap-touchspin.min.css"
+			rel="stylesheet"
+		/>
+
         <link href="<?php echo base_url();?>vendor2\assets\css\icons.css" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url();?>vendor2\assets\css\style.css" rel="stylesheet" type="text/css">
 </head>
@@ -350,6 +361,12 @@
 <!-- Datatable init js -->
 <script src="<?php echo base_url();?>vendor2\assets\pages\datatables.init.js">
 </script>
+
+<!-- Plugin Js Select2 option -->
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\select2\js\select2.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\veltrixTemplate\veltrix\layouts\plugins\bootstrap-touchspin\js\jquery.bootstrap-touchspin.min.js"></script>
+<script src="<?php echo base_url();?>vendor2\assets\pages\form-advanced.js"></script>
+
 <!-- App js -->
 <script src="<?php echo base_url();?>vendor2\assets\js\app.js"></script>
 </script>
@@ -359,6 +376,13 @@
 	$(document).ready(function(){
 		$('.data').DataTable();
 	});
+</script>
+
+<!-- My Script Select2 searchbox -->
+<script>
+    $(document).ready(function() {
+        $('.select2').select2();
+    });
 </script>
 
 </body>

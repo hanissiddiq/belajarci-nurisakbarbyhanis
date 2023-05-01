@@ -3,7 +3,6 @@
 
 
 <h3>Tambah Data Barang</h3>
-
 <table class="table table-bordered mt-2">
     <tr>
         <td class="col-3">Nama Barang</td>
