@@ -19,7 +19,7 @@ class con_transaksi extends CI_Controller {
             $data['barang']=$this->model_barang->tampilkan_data()->result();
             $data['detail']=$this->model_transaksi->tampilkan_detail_transaksi();
             // $this->load->view('transaksi/form_transaksi',$data);
-            $this->template->load('template','transaksi/form_transaksi',$data);
+            $this->template->load('template2','transaksi/form_transaksi',$data);
         }
 
     }
@@ -40,6 +40,11 @@ class con_transaksi extends CI_Controller {
         $this->model_transaksi->selesai_belanja($data);
         redirect('con_transaksi');
     }
+
+    // function laporan(){
+    //     $data['record']= $this->model_transaksi->laporan_default();
+    //     $this->template->load('template2','transaksi/laporan',$data);
+    // }
 }
 
 

@@ -260,11 +260,12 @@
                     <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-clipboard-list"></i>
                 <span> Laporan <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span>
                     </a>
-                <ul class="submenu"><li>
-                    <a href="<?= base_url('index.php/con_transaksi/laporan') ?>">Lap. Harian</a></li>
-                <li><a href="<?= base_url('index.php/con_transaksi/laporan') ?>">Lap. Bulanan</a></li>
-                <li><a href="<?= base_url('index.php/con_transaksi/laporan') ?>l">Lap. Tahunan</a></li>
-            </ul></li>
+                <ul class="submenu">
+                    <li><a href="<?= base_url('index.php/con_laporan') ?>">Lap. Pertransaksi</a></li>
+                    <li><a href="<?= base_url('index.php/con_laporan/laporan_periode') ?>">Lap. Perperiode</a></li>
+                    <li><a href="<?= base_url('index.php/con_laporan') ?>">Lap. Tahunan</a></li>
+                </ul>
+                </li>
 
                 <li>
                     <a href="<?= base_url('index.php/auth/logout') ?>" class="waves-effect"><i class="fas fa-sign-out-alt"></i>
